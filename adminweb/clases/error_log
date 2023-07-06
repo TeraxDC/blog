@@ -1,0 +1,63 @@
+[10-Jan-2022 14:19:54 UTC] PHP Notice:  Undefined index: archivo_adjunto in /home/ck0o796kwdpp/public_html/adminweb/clases/transparencia.php on line 145
+[17-Jan-2022 14:14:29 UTC] PHP Notice:  Undefined variable: _SESSION in /home/ck0o796kwdpp/public_html/adminweb/clases/cerra_session.php on line 2
+[06-Jul-2022 17:27:39 UTC] PHP Notice:  Undefined index: archivo_adjunto in /home/ck0o796kwdpp/public_html/adminweb/clases/transparencia.php on line 145
+[14-Jul-2022 18:43:13 UTC] PHP Notice:  Undefined index: archivo_adjunto in /home/ck0o796kwdpp/public_html/adminweb/clases/transparencia.php on line 145
+[11-Oct-2022 22:50:59 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:50:59 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:00 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:01 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:01 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:02 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:04 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:15 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:16 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:16 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:16 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:17 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:25 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:25 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:25 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:36 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:37 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:51:38 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:52:08 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:52:10 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:07 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:08 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:08 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:11 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:11 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:12 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[11-Oct-2022 22:54:13 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/clases/crear_publicacion.php on line 174
+[16-Jan-2023 20:22:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[16-Jan-2023 20:22:13 UTC] PHP Notice:  Undefined variable: conexion in /home3/xyltrylx/public_html/adminweb/conexion/conexion.php on line 13
+[16-Jan-2023 20:22:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home3/xyltrylx/public_html/adminweb/clases/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home3/xyltrylx/public_html/adminweb/clases/login.php on line 12
+[16-Jan-2023 20:39:57 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[16-Jan-2023 20:39:57 UTC] PHP Notice:  Undefined variable: conexion in /home3/xyltrylx/public_html/adminweb/conexion/conexion.php on line 13
+[16-Jan-2023 20:39:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home3/xyltrylx/public_html/adminweb/clases/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home3/xyltrylx/public_html/adminweb/clases/login.php on line 12
+[17-Jan-2023 12:38:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 12:38:44 UTC] PHP Notice:  Undefined variable: conexion in /home3/xyltrylx/public_html/adminweb/conexion/conexion.php on line 13
+[17-Jan-2023 12:38:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home3/xyltrylx/public_html/adminweb/clases/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home3/xyltrylx/public_html/adminweb/clases/login.php on line 12
+[17-Jan-2023 14:00:38 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:00:38 UTC] PHP Notice:  Undefined variable: conexion in /home3/xyltrylx/public_html/adminweb/conexion/conexion.php on line 13
+[17-Jan-2023 14:00:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home3/xyltrylx/public_html/adminweb/clases/login.php:12
+Stack trace:
+#0 {main}
+  thrown in /home3/xyltrylx/public_html/adminweb/clases/login.php on line 12
+[17-Jan-2023 14:02:35 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:15:44 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:16:06 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:16:32 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 17:59:12 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 18:01:38 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 18:01:38 UTC] PHP Notice:  Undefined variable: _SESSION in /home3/xyltrylx/public_html/adminweb/clases/cerra_session.php on line 2
+[24-Jan-2023 21:59:48 UTC] PHP Notice:  Undefined variable: _SESSION in /home3/xyltrylx/public_html/adminweb/clases/cerra_session.php on line 2

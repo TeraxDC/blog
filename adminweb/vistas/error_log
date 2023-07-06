@@ -1,0 +1,53 @@
+[09-Jul-2021 18:06:32 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_publicaciones.php on line 87
+[09-Jul-2021 18:06:32 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_publicaciones.php on line 90
+[09-Jul-2021 18:06:32 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_publicaciones.php on line 173
+[17-Nov-2021 20:58:15 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 88
+[17-Nov-2021 20:58:15 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 91
+[17-Nov-2021 20:58:15 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 174
+[18-Nov-2021 00:41:09 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_menu_web.php on line 87
+[18-Nov-2021 00:41:09 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_menu_web.php on line 90
+[18-Nov-2021 00:41:09 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_menu_web.php on line 173
+[18-Nov-2021 02:27:20 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_cat_transparencia.php on line 86
+[18-Nov-2021 02:27:20 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_cat_transparencia.php on line 89
+[18-Nov-2021 02:27:20 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_cat_transparencia.php on line 172
+[01-Dec-2021 22:11:10 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 88
+[01-Dec-2021 22:11:10 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 91
+[01-Dec-2021 22:11:10 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 174
+[06-Jan-2022 17:29:04 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 88
+[06-Jan-2022 17:29:04 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 91
+[06-Jan-2022 17:29:04 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 174
+[10-Jan-2022 17:45:10 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 88
+[10-Jan-2022 17:45:10 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 91
+[10-Jan-2022 17:45:10 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 174
+[10-Jan-2022 21:06:46 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_menu_web.php on line 87
+[10-Jan-2022 21:06:46 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_menu_web.php on line 90
+[10-Jan-2022 21:06:46 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_menu_web.php on line 173
+[06-Jul-2022 17:26:17 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 88
+[06-Jul-2022 17:26:17 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 91
+[06-Jul-2022 17:26:17 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 174
+[08-Jul-2022 17:23:18 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 88
+[08-Jul-2022 17:23:18 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 91
+[08-Jul-2022 17:23:18 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_transparencia.php on line 174
+[11-Oct-2022 22:54:13 UTC] PHP Notice:  Undefined index: mwimagen in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_publicaciones.php on line 87
+[11-Oct-2022 22:54:13 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_publicaciones.php on line 90
+[11-Oct-2022 22:54:13 UTC] PHP Notice:  Undefined index: mwusuario in /home/ck0o796kwdpp/public_html/adminweb/vistas/v_publicaciones.php on line 173
+[17-Jan-2023 14:07:39 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:07:56 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:15:45 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:16:08 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 14:16:33 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 17:59:29 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 18:00:28 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[17-Jan-2023 18:00:32 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'pdo_oci.so' (tried: /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so (libclntsh.so.12.1: cannot open shared object file: No such file or directory), /opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so (/opt/alt/php74/usr/lib64/php/modules/pdo_oci.so.so: cannot open shared object file: No such file or directory)) in Unknown on line 0
+[23-Mar-2023 19:04:21 UTC] PHP Notice:  Undefined index: mwimagen in /home3/xyltrylx/public_html/adminweb/vistas/v_menu_web.php on line 87
+[23-Mar-2023 19:04:21 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_menu_web.php on line 90
+[23-Mar-2023 19:04:21 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_menu_web.php on line 173
+[04-Jul-2023 22:29:05 UTC] PHP Notice:  Undefined index: mwimagen in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 88
+[04-Jul-2023 22:29:05 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 91
+[04-Jul-2023 22:29:05 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 174
+[05-Jul-2023 16:31:46 UTC] PHP Notice:  Undefined index: mwimagen in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 88
+[05-Jul-2023 16:31:46 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 91
+[05-Jul-2023 16:31:46 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 174
+[05-Jul-2023 22:50:05 UTC] PHP Notice:  Undefined index: mwimagen in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 88
+[05-Jul-2023 22:50:05 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 91
+[05-Jul-2023 22:50:05 UTC] PHP Notice:  Undefined index: mwusuario in /home3/xyltrylx/public_html/adminweb/vistas/v_transparencia.php on line 174
