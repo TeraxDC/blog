@@ -99,59 +99,26 @@
       About Us Section
     ============================-->
     <section id="about" class="p-3 mt-3">
-      <h1 class="d-inline"><b>CONCEJO MUNICIPAL</b> </h1> <h1 class="text-info d-inline"><b>2019-2022</b> </h1>
-      <div >
-        <div class="row align-items-start">
-            
-          <div class="col-4">
-            <img class="img" src="/img/alcalde/escobar.png" alt="">
-            <h5 class="text-center"><b>ING. JOSÉ ANTONIO ESCOBAR CHUQUIHUACCHA</b></h5>
-            <p class="text-center"><b>jose.escobar@munihyatara.gob.pe</b></p>
-            <p class="text-center">Huaytarino de Nacimiento en el Anexo de Chocorvo, Huaytará, 
-            Profesional en el Área de Informática y Sistemas, con experiencia laboral en el sector público por más de 20 años, 
-             experiencia laboral que me 
-            acompaña para aportar en el beneficio de mi provincia de Huaytará, apostando por un desarrollo 
-            moderno, con proyectos e instrumentos de gestión acordes a los nuevos tiempos y que la gestión municipal siempre 
-            este caminando junto de la mano con el pueblo.</p>
-          </div>
-          
-          <div class="col-4">
-            <img class="img" src="/img/alcalde/cervantes.png" alt="">
-            <h5 class="cer text-center"> <b>ING. HÉCTOR RAÚL CERVANTES HUAMANI</b> </h5>
-             <p class="text-center"><b>hector.cervantes@munihyatara.gob.pe</b></p>
-            <p class="text-center"> Ingeniero de profesión, involucrado con el desarrollo y bienestar de la población, incursioné en la política para llevar ese desarrollo hasta
-            el último rincón de mi provincia de Huaytará.</p>
-          </div>
-          
-          <div class="col-4">      
-            <img class="img" src="/img/alcalde/cintya.png" alt="">
-            <h5 class="text-center"><b>LIC. CYNTHIA CAROLINA HUAMÁN MITACC</b> </h5>
-             <p class="text-center"><b>cynthia.huaman@munihyatara.gob.pe</b></p>
-            <p class="text-center"> Licenciada en enfermería de vocación y profesión, comprometidad con la salud y bienestar de mi comunidad y mi país, involucrada en la política
-            para tener mayor alcance y llegar a más de mis hermanos compoblanos.</p>
+      
+      
+      <!-- ============= cards =========-->
 
-          </div>
-        
-          <div class="col-4">
-            <img class="img" src="/img/alcalde/wincho.png" alt="">
-            <h5 class="cert text-center"> <b>PROF. ALICIA WINCHO DE SOTO</b> </h5>
-             <p class="text-center"><b>alicia.wincho@munihyatara.gob.pe</b></p>
-            <p class="text-center">Docente de profesión, desde el momento que decidí recorrer el camino de la docencia empezó mi interés en ayudar y enseñar a los más pequeños
-            de nuestro pueblo querido, que más tarde serán el futuro de nuestro pueblo y nuestro Perú.</p>
-          </div>
-         
-          <div class="col-4">      
-            <img class="img" src="/img/alcalde/genaro.png" alt="">
-            <h5 class="cer"><b>SR. PABLO GENARO HUARCAYA LICAS</b> </h5>
-             <p class="text-center"><b>pablo.genaro@munihyatara.gob.pe</b></p>
-            <p class="text-center">Me incursione a la política, y llegar a ser regidor en la Provincia de Huaytará para fiscalizar cuales eran los motivos por el cual las obras no se llegan a concluir, siendo conocedor que los pueblos alto andinos más alejados son los perjudicados, donde no se cuenta con servicio de luz, agua, desagüe y transporte. Puestos que estos pueblos solo viven de las actividades de agricultura y ganadería.
-Hoy por hoy sabemos que en el Perú existe mucho centralismo y mucho más.</p>
-          </div>
-          
-        
+      <section id="gallery">
+  <div class="container">
+  <h1 class="d-inline"><b>CONCEJO MUNICIPAL</b> </h1> <h1 class="text-info d-inline"><b>2019-2022</b> </h1><
+    <div class="row">
+          <?php 
+              require_once './clases/autoridades.php';
+              $publicaciones=new Autoridad();
+              $publicaciones->listar_autoridades();
+          ?>
     </div>
-    </div>
-    </section><!-- #about -->
+</div>
+</section>
+      
+   
+  
+  </section><!-- #about -->
 
  
      <!--==========================
