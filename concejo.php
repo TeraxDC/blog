@@ -105,12 +105,12 @@
 
       <section id="gallery">
   <div class="container">
-  <h1 class="d-inline"><b>CONCEJO MUNICIPAL</b> </h1> <h1 class="text-info d-inline"><b>2019-2022</b> </h1><
+  <h1 class="d-inline"><b>CONCEJO MUNICIPAL</b> </h1> <h1 class="text-info d-inline"><b>2023-2026</b> </h1>
     <div class="row">
           <?php 
               require_once './clases/autoridades.php';
               $publicaciones=new Autoridad();
-              $publicaciones->listar_autoridades();
+              $publicaciones->listar_regidores();
           ?>
     </div>
 </div>
