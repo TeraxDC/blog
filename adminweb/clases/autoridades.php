@@ -12,13 +12,13 @@
  * @author LUCHO
  */
 require_once '../conexion/conexion.php';
-class transparencia{
+class autoridad{
 public function lista_tablas(){
  try {
 $conexion=new Conexion();
 $conectado=$conexion->conectar();
-$sql="SELECT a.id, a.cargo idcargo, a.nombre, a.correo, a.descripcion, c.nombre cargo, concat(g.inicio, " - ",g.fin) gestion, a.foto from autoridad a 
-INNER JOIN cargo c on a.cargo = c.id INNER join gestion g on a.gestion = g.id; ";
+$sql="SELECT a.id, a.cargo idcargo, a.nombre, a.correo, a.descripcion, c.nombre cargo, concat(g.inicio, ' - ',g.fin) gestion, a.foto from autoridad a 
+INNER JOIN cargo c on a.cargo = c.id INNER join gestion g on a.gestion = g.id";
 $result=$conectado->prepare($sql);
 $result->execute([]);
 foreach ($result as $filas) {
@@ -51,12 +51,12 @@ echo $exc->getTraceAsString();
 }
 
 
-public function lista_categorias(){
+public function lista_cargos(){
  try {
 $conexion=new Conexion();
 $conectado=$conexion->conectar();
-$sql="select idcat_docs_gestion,nombre
-from cat_transparencia;";
+$sql="select id,nombre
+from cargo;";
 $result=$conectado->prepare($sql);
 $result->execute([]);
 foreach ($result as $filas) {
@@ -67,20 +67,39 @@ echo $exc->getTraceAsString();
 }
 }
 
+public function lista_gestion(){
+    try {
+   $conexion=new Conexion();
+   $conectado=$conexion->conectar();
+   $sql="select id,concat(inicio, ' - ',fin) periodo
+   from gestion;";
+   $result=$conectado->prepare($sql);
+   $result->execute([]);
+   foreach ($result as $filas) {
+    echo '<option value="'.$filas[0].'">'.$filas[1].'</option>';
+   }
+   } catch (Exception $exc) {
+   echo $exc->getTraceAsString();
+   }
+   }
+
 
 public function insertar_datos(
-$idcattrans,$nombre_transparencia,$descripcion_breve,$archivo_adjunto){
+$idcargo,$nombre,$correo,$descripcion,$archivo_adjunto,$idgestion){
 try {
 $conexion=new Conexion();
 $conectado=$conexion->conectar();
- $sql="insert into transparencia (idcattrans,nombre_transparencia,descripcion_breve,archivo_adjunto) values(?,?,?,?)";
+ $sql="insert into autoridad (cargo,nombre,correo,descripcion,foto,gestion) values(?,?,?,?)";
+ //$sql="insert into transparencia (idcattrans,nombre_transparencia,descripcion_breve,archivo_adjunto) values(?,?,?,?,?,?)";
 $result=$conectado->prepare($sql);
-$result->execute([$idcattrans,$nombre_transparencia,$descripcion_breve,$archivo_adjunto]);
+$result->execute([$idcargo,$nombre,$correo,$descripcion,$archivo_adjunto,$idgestion]);
 } catch (Exception $exc) {
 echo $exc->getTraceAsString();
 }
 }
-public function modificar_datos($idtransparencia,$idcattrans,$nombre_transparencia,$descripcion_breve,$archivo_adjunto){
+
+
+public function modificar_datos($idautoridad,$idcargo,$nombre,$correo,$descripcion,$archivo_adjunto){
 try {
 $conexion=new Conexion();
 $conectado=$conexion->conectar();
@@ -106,7 +125,7 @@ echo $exc->getTraceAsString();
 
 
 
-$dml_transparencia=new transparencia();
+$dml_autoridad=new autoridad();
 if (isset($_POST["Insertar"])) {
     $idcategoria= intval($_POST["idcattrans"]);
     $nombre_doc=$_POST["nombre_transparencia"];
@@ -115,7 +134,7 @@ if (isset($_POST["Insertar"])) {
 if(isset($_FILES['fichero'])){
 if(is_uploaded_file($_FILES['fichero']['tmp_name'])) {
     $nombre_fichero= md5($_FILES['fichero']['name']).$_FILES['fichero']['name'];
-    $ruta = "../docs_transparencia/"; 
+    $ruta = "../../img/autoridad/"; 
     $upload= $ruta . $nombre_fichero;
     
     if(!move_uploaded_file($_FILES['fichero']['tmp_name'], $upload)) { //movemos el archivo a su ubicacion      
@@ -126,7 +145,7 @@ if(is_uploaded_file($_FILES['fichero']['tmp_name'])) {
 }else{
     echo "no hay archivo";
 }  
-$dml_transparencia->insertar_datos($_POST["idcattrans"],$_POST["nombre_transparencia"],$_POST["descripcion_breve"],$nombre_fichero);
+$dml_autoridad->insertar_datos($_POST["idcattrans"],$_POST["nombre_transparencia"],$_POST["descripcion_breve"],$nombre_fichero);
 }
 if (isset($_POST["Modificar"])) {
     $idcategoria= intval($_POST["idcattrans"]);
@@ -146,8 +165,8 @@ if(is_uploaded_file($_FILES['fichero']['tmp_name'])) {
 }else{
     echo "no hay archivo";
 }  
-$dml_transparencia->modificar_datos($_POST["idtransparencia"],$_POST["idcattrans"],$_POST["nombre_transparencia"],$_POST["descripcion_breve"],$_POST["archivo_adjunto"]);}
+$dml_autoridad->modificar_datos($_POST["idtransparencia"],$_POST["idcattrans"],$_POST["nombre_transparencia"],$_POST["descripcion_breve"],$_POST["archivo_adjunto"]);}
 if (isset($_POST["Eliminar"])) {
-$dml_transparencia->eliminar_datos($_POST["codigoe"]);
+$dml_autoridad->eliminar_datos($_POST["codigoe"]);
 }
                                                                                 

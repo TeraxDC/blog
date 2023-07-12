@@ -320,8 +320,8 @@
 										</thead>
 										<tbody>
 											<?php
-											require_once '../clases/transparencia.php';
-											$dml_transparencia->lista_tablas();
+											require_once '../clases/autoridades.php';
+											$dml_autoridad->lista_tablas();
 											?>
 										</tbody>
 									</table>
@@ -344,26 +344,41 @@
 													<div>
 														<div class="col-sm-12">
 															<div class="form-group">
-
-																<label for="idcattrans" class="blue bolder">Categoría:</label>
+															<label for="idcatgestion" class="blue bolder">Gestión:</label>
 																<div>
-																	<select class="chosen-select form-control" id="idcattrans" data-placeholder="Escoja una categoría...">
+																	<select class="chosen-select form-control" id="idcatgestion" data-placeholder="Escoja la gestión...">
 																		<option value=""> </option>
 																		<?php
-																		$dml_transparencia->lista_categorias();
+																		$dml_autoridad->lista_gestion();
 																		?>
 																	</select>
 																	<br>
-																	<label class="red bolder hide" id="idcattransvalidate">La Categoría es Obligatorio *</label>
+																	<label class="red bolder hide" id="idcatgestionvalidate">La gestión es Obligatoria *</label>
 																</div>
-																<label for="nombre_transparencia" class="blue bolder">Nombre Documento:</label>
+																<label for="idcatcargo" class="blue bolder">Cargo:</label>
 																<div>
-																	<input type="text" class="form-control" id="nombre_transparencia" placeholder="Ingrese sus Datos" maxlength="800" />
-																	<label class="red bolder hide" id="nombre_transparenciavalidate">El Nombre del Documento es Obligatorio *</label>
+																	<select class="chosen-select form-control" id="idcatcargo" data-placeholder="Escoja un cargo...">
+																		<option value=""> </option>
+																		<?php
+																		$dml_autoridad->lista_cargos();
+																		?>
+																	</select>
+																	<br>
+																	<label class="red bolder hide" id="idcatcargovalidate">el cargo es Obligatorio *</label>
+																</div>
+																<label for="nombre_autoridad" class="blue bolder">Nombres y Apellidos:</label>
+																<div>
+																	<input type="text" class="form-control" id="nombre_autoridad" placeholder="Ingrese sus Datos" maxlength="800" />
+																	<label class="red bolder hide" id="nombre_autoridadvalidate">El Nombre de la autoridad es Obligatorio *</label>
+																</div>
+																<label for="correo_autoridad" class="blue bolder">Correo:</label>
+																<div>
+																	<input type="text" class="form-control" id="correo_autoridad" placeholder="Ingrese sus Datos" maxlength="00" />
+																	<label class="red bolder hide" id="correo_autoridadvalidate">El correo es Obligatorio *</label>
 																</div>
 																<label for="descripcion_breve" class="blue bolder">Descripción:</label>
 																<div>
-																	<input type="text" class="form-control" id="descripcion_breve" placeholder="Ingrese sus Datos" maxlength="500" />
+																	<textarea class="form-control" id="descripcion_breve" placeholder="Ingrese sus Datos" rows="5"></textarea>
 																</div>
 																<label for="archivo_adjunto" class="blue bolder">Seleccione un Archivo:</label>
 																<div>
@@ -565,6 +580,8 @@
 							return true;
 						}*/
 						,
+						allowExt: ["jpeg", "jpg", "png", "gif"],
+					allowMime: ["image/jpg", "image/jpeg", "image/png", "image/gif"],
 					preview_error: function(filename, error_code) {
 						//name of the file that failed
 						//error_code values
@@ -626,10 +643,10 @@
 					}
 				}).on("hidden.bs.modal", function() {
 					idedicion = "";
-					$("#idcattrans").chosen();
-					$("#idcattrans").val("");
-					$("#idcattrans").trigger("chosen:updated");
-					$("#nombre_transparencia").val("");
+					$("#idcatgestion").chosen();
+					$("#idcatgestion").val("");
+					$("#idcatgestion").trigger("chosen:updated");
+					$("#nombre_autoridad").val("");
 					$("#descripcion_breve").val("");
 
 				});
@@ -665,30 +682,36 @@
 				}
 
 				$("#btnguardar").on("click", function() {
-					if (validate("#idcattrans", "#idcattransvalidate")) return;
-					if (validate("#nombre_transparencia", "#nombre_transparenciavalidate")) return;
+					if (validate("#idcatgestion", "#idcatgestionvalidate")) return;
+					if (validate("#idcatcargo", "#idcatcargovalidate")) return;
+					if (validate("#nombre_autoridad", "#nombre_autoridadvalidate")) return;
+					if (validate("#correo_autoridad", "#correo_autoridadvalidate")) return;
 					if (validate("#archivo_adjunto", "#archivo_adjuntovalidate")) return;
-
-					var idcategoria = $("#idcattrans").val();
-					var nombre = $("#nombre_transparencia").val();
+					
+					var idgestion = $("#idcatgestion").val();
+					var idcategoria = $("#idcatcargo").val();
+					var nombre = $("#nombre_autoridad").val();
+					var nombre = $("#correo_autoridad").val();
 					var descripcion = $("#descripcion_breve").val();
 					var fichero = document.getElementById("archivo_adjunto");
 					var formData = new FormData();
 					formData.append("fichero", fichero.files[0]);
 					if (idedicion !== "") {
-						formData.append("idtransparencia", idedicion);
+						formData.append("idautoridad", idedicion);
 						formData.append("Modificar", 'modificar');
 
 					} else {
 						var insertar = '-';
 						formData.append("Insertar", insertar);
 					}
-					formData.append("idcattrans", idcategoria);
-					formData.append("nombre_transparencia", nombre);
+					formData.append("idcatgestion", idcategoria);
+					formData.append("idcatcargo", idcategoria);
+					formData.append("nombre_autoridad", nombre);
+					formData.append("correo_autoridad", nombre);
 					formData.append("descripcion_breve", descripcion);
 					$.ajax({
 						data: formData,
-						url: "../clases/transparencia.php",
+						url: "../clases/autoridades.php",
 						type: "post",
 						dataType: "html",
 						cache: false,
@@ -742,7 +765,7 @@
 						"Eliminar": "-",
 						"codigoe": valores[0]
 					};
-					eliminar_datos(parametros, "../clases/transparencia.php", "post");
+					eliminar_datos(parametros, "../clases/autoridades.php", "post");
 				}
 
 			});
@@ -758,16 +781,16 @@
 
 				//subir la data a los objetos
 				idedicion = valores[0];
-				$("#idcattrans").chosen();
-				$("#idcattrans").val(valores[1]);
-				$("#idcattrans").trigger("chosen:updated");
-				$("#nombre_transparencia").val(valores[3]);
+				$("#idcatgestion").chosen();
+				$("#idcatgestion").val(valores[1]);
+				$("#idcatgestion").trigger("chosen:updated");
+				$("#nombre_autoridad").val(valores[3]);
 				$("#descripcion_breve").val(valores[4]);
 				//                        alert($("#list_menus").val());
 			});
 			$('document').ready(function() {
 				$('#mm2').addClass("active open");
-				$('#mm11').addClass("active");
+				$('#mm15').addClass("active");
 			});
 		</script>
 		<!-- inline scripts related to this page -->
