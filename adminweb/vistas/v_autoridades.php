@@ -580,8 +580,8 @@
 							return true;
 						}*/
 						,
-						allowExt: ["jpeg", "jpg", "png", "gif"],
-					allowMime: ["image/jpg", "image/jpeg", "image/png", "image/gif"],
+						//allowExt: ["jpeg", "jpg", "png", "gif"],
+					//allowMime: ["image/jpg", "image/jpeg", "image/png", "image/gif"],
 					preview_error: function(filename, error_code) {
 						//name of the file that failed
 						//error_code values
@@ -691,7 +691,7 @@
 					var idgestion = $("#idcatgestion").val();
 					var idcategoria = $("#idcatcargo").val();
 					var nombre = $("#nombre_autoridad").val();
-					var nombre = $("#correo_autoridad").val();
+					var correo = $("#correo_autoridad").val();
 					var descripcion = $("#descripcion_breve").val();
 					var fichero = document.getElementById("archivo_adjunto");
 					var formData = new FormData();
@@ -704,10 +704,10 @@
 						var insertar = '-';
 						formData.append("Insertar", insertar);
 					}
-					formData.append("idcatgestion", idcategoria);
+					formData.append("idcatgestion", idgestion);
 					formData.append("idcatcargo", idcategoria);
 					formData.append("nombre_autoridad", nombre);
-					formData.append("correo_autoridad", nombre);
+					formData.append("correo_autoridad", correo);
 					formData.append("descripcion_breve", descripcion);
 					$.ajax({
 						data: formData,
@@ -781,10 +781,14 @@
 
 				//subir la data a los objetos
 				idedicion = valores[0];
-				$("#idcatgestion").chosen();
-				$("#idcatgestion").val(valores[1]);
-				$("#idcatgestion").trigger("chosen:updated");
-				$("#nombre_autoridad").val(valores[3]);
+				//$("#idcatgestion").chosen();
+				$("#idcatgestion").val(valores[6]);
+				//$("#idcatgestion").trigger("chosen:updated");
+				//$("#idcatcargo").chosen();
+				$("#idcatcargo").val(valores[1]);
+				//$("#idcatcargo").trigger("chosen:updated");
+				$("#nombre_autoridad").val(valores[2]);
+				$("#correo_autoridad").val(valores[3]);
 				$("#descripcion_breve").val(valores[4]);
 				//                        alert($("#list_menus").val());
 			});
