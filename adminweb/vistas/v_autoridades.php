@@ -305,15 +305,16 @@
 									<div class="table-header">
 										Lista de Auridades
 									</div>
-									<table id="tabla_datos" class="table table-striped table-bordered table-hover ">
+									<table id="tabla_datos2" class="table table-striped table-bordered table-hover ">
 										<thead>
 											<tr>
 												<th>Código</th>
-												<th class="hide">idcat</th>
 												<th>Nombre</th>
 												<th>Correo</th>
 												<th>Descripción</th>
+												<th class="hide">idcargo</th>
 												<th>Cargo</th>
+												<th class="hide">idgestion</th>
 												<th>Gestión</th>
 												<th>Acciones</th>
 											</tr>
@@ -373,7 +374,7 @@
 																</div>
 																<label for="correo_autoridad" class="blue bolder">Correo:</label>
 																<div>
-																	<input type="text" class="form-control" id="correo_autoridad" placeholder="Ingrese sus Datos" maxlength="00" />
+																	<input type="text" class="form-control" id="correo_autoridad" placeholder="Ingrese sus Datos" maxlength="100" />
 																	<label class="red bolder hide" id="correo_autoridadvalidate">El correo es Obligatorio *</label>
 																</div>
 																<label for="descripcion_breve" class="blue bolder">Descripción:</label>
@@ -493,48 +494,17 @@
 
 
 				var myTable =
-					$('#tabla_datos')
-					//				.wrap("<div class='dataTables_borderWrap' />")   //if you are applying horizontal scrolling (sScrollX)
+					$('#tabla_datos2')
 					.DataTable({
 						bAutoWidth: false,
 						"aoColumns": [
-							null, null, null, null, null, null, null,
+							null, null, null, null, null, null, null, null,
 							{
 								"bSortable": false
 							}
 						],
 						"aaSorting": [],
-
-
-						//"bProcessing": true,
-						//			        "bServerSide": true,
-						//                                'processing': true,
-						//                                'serverSide': true,
-						//                                'serverMethod': 'post',
-						//                                'ajax': {
-						//                                    'url':'../clases/menus.php',
-						//                                    
-						//                                },
-						//                                "columns": [
-						//                                    { data: "idmenu"} ,
-						//                                    { data: "nombre"},
-						//                                    { data: "nombre_menu"},
-						//                                    { data: "direccion"},
-						//                                    { data: "clase_llamar"},
-						//                                    { data: "dependencias"},
-						//                                    { data: "menu_padre"},
-						//                                    { data: "font_icon"}],
-
-						//,
-						//					"sScrollY": "600px",
-						//"bPaginate": false,
-
 						"sScrollX": "100%",
-						//"sScrollXInner": "120%",
-						//"bScrollCollapse": true,
-						//Note: if you are applying horizontal scrolling (sScrollX) on a ".table-bordered"
-						//you may want to wrap the table inside a "div.dataTables_borderWrap" element
-
 						"iDisplayLength": 25,
 
 
@@ -551,6 +521,7 @@
 							"infoFiltered": "(Filtrado de _MAX_ registros)"
 						}
 					});
+					
 				//progressbar
 				$("#progressbar").progressbar({
 
@@ -646,9 +617,12 @@
 					$("#idcatgestion").chosen();
 					$("#idcatgestion").val("");
 					$("#idcatgestion").trigger("chosen:updated");
+					$("#idcatcargo").chosen();
+					$("#idcatcargo").val("");
+					$("#idcatcargo").trigger("chosen:updated");
 					$("#nombre_autoridad").val("");
+					$("#correo_autoridad").val("");
 					$("#descripcion_breve").val("");
-
 				});
 
 				setTimeout(function() {
@@ -781,15 +755,15 @@
 
 				//subir la data a los objetos
 				idedicion = valores[0];
-				//$("#idcatgestion").chosen();
+				$("#nombre_autoridad").val(valores[1]);
+				$("#correo_autoridad").val(valores[2]);
+				$("#descripcion_breve").val(valores[3]);
+			    $("#idcatcargo").chosen();
+				$("#idcatcargo").val(valores[4]);
+			    $("#idcatcargo").trigger("chosen:updated");
+			    $("#idcatgestion").chosen();
 				$("#idcatgestion").val(valores[6]);
-				//$("#idcatgestion").trigger("chosen:updated");
-				//$("#idcatcargo").chosen();
-				$("#idcatcargo").val(valores[1]);
-				//$("#idcatcargo").trigger("chosen:updated");
-				$("#nombre_autoridad").val(valores[2]);
-				$("#correo_autoridad").val(valores[3]);
-				$("#descripcion_breve").val(valores[4]);
+			    $("#idcatgestion").trigger("chosen:updated");
 				//                        alert($("#list_menus").val());
 			});
 			$('document').ready(function() {

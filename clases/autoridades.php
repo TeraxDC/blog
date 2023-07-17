@@ -17,7 +17,7 @@ class Autoridad
         echo '<div class="card mb-3">';
         echo '<div class="row g-0">';
         echo '<div class="col-md-5">';
-        echo '<img src="img/alcalde/alcalde.jpg" class="img-fluid rounded-start" alt="' . $filas['nombre'] . '">';
+        echo '<img src="' . $filas['foto'] . '" class="img-fluid rounded-start" alt="' . $filas['nombre'] . '">';
         echo '</div>';
         echo '<div class="col-md-7">';
         echo '<div class="card-body">';
