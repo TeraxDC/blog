@@ -194,7 +194,7 @@
 							<li>
 								<a href="#">Operaciones</a>
 							</li>
-							<li class="active">Transparencia</li>
+							<li class="active">Carrusel</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class="nav-search" id="nav-search">
@@ -277,10 +277,10 @@
                                                 <div class="row">
                                                 <div class="page-header col-sm-8">
 							<h1>
-								Transparencia
+								Carrusel
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Documentos de Gestión
+									Contenido Web
 								</small>
 							</h1>
 						</div>

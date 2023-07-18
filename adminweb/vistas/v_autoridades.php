@@ -199,7 +199,7 @@
 						<li>
 							<a href="#">Operaciones</a>
 						</li>
-						<li class="active">Transparencia</li>
+						<li class="active">Autoridades</li>
 					</ul><!-- /.breadcrumb -->
 
 					<div class="nav-search" id="nav-search">
@@ -282,10 +282,10 @@
 					<div class="row">
 						<div class="page-header col-sm-8">
 							<h1>
-								Transparencia
+								Autoridades
 								<small>
 									<i class="ace-icon fa fa-angle-double-right"></i>
-									Documentos de Gestión
+									Detalle Municipalidad
 								</small>
 							</h1>
 						</div>
@@ -673,7 +673,6 @@
 					if (idedicion !== "") {
 						formData.append("idautoridad", idedicion);
 						formData.append("Modificar", 'modificar');
-
 					} else {
 						var insertar = '-';
 						formData.append("Insertar", insertar);

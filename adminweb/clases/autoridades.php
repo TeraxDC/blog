@@ -7,9 +7,9 @@
  */
 
 /**
- * Description of transparencia
+ * Description of autoridades
  *
- * @author LUCHO
+ * @author MPH
  */
 require_once '../conexion/conexion.php';
 class autoridad
@@ -35,7 +35,7 @@ INNER JOIN cargo c on a.cargo = c.id INNER join gestion g on a.gestion = g.id";
                 echo '<td >' . $filas[7] . '</td>';
                 echo '<td class="center">';
                 echo '<div class="action-buttons">';
-                echo '<a class="info tooltip-info" data-rel="tooltip" title="Verificar Adjunto" href="../../' . $filas[8] . '" target=”_blank” role="button" data-toggle="modal">';
+                echo '<a class="info tooltip-info" data-rel="tooltip" title="Verificar Adjunto" href="../imagenes/autoridad/' . $filas[8] . '" target=”_blank” role="button" data-toggle="modal">';
                 echo '<i class="ace-icon fa fa-eye bigger-130"></i>';
                 echo '</a>';
                 echo '<a class="green tooltip-success editar" data-rel="tooltip" title="Editar" href="#modal-form" role="button" data-toggle="modal">';
@@ -110,7 +110,7 @@ from cargo;";
     }
 
 
-    public function modificar_datos($id, $idcargo, $nombre, $correo, $descripcion, $archivo_adjunto, $gestion)
+    public function modificar_datos($idcargo, $nombre, $correo, $descripcion, $archivo_adjunto, $gestion, $id)
     {
         try {
             $conexion = new Conexion();
@@ -144,8 +144,8 @@ $dml_autoridad = new autoridad();
 if (isset($_POST["Insertar"])) {
     $idcatgestion = intval($_POST["idcatgestion"]);
     $idcatcargo = intval($_POST["idcatcargo"]);
-    $nombre_aut = $_POST["nombre_transparencia"];
-    $correo_aut = $_POST["nombre_transparencia"];
+    $nombre_aut = $_POST["nombre_autoridad"];
+    $correo_aut = $_POST["correo_autoridad"];
     $descripcion = $_POST["descripcion_breve"];
     $nombre_fichero = null;
     if (isset($_FILES['fichero'])) {
@@ -162,14 +162,15 @@ if (isset($_POST["Insertar"])) {
     } else {
         echo "no hay archivo";
     }
-    $dml_autoridad->insertar_datos($idcatcargo, $nombre_aut, $correo_aut, $descripcion, $_POST["archivo_adjunto"], $_POST["idcatgestion"]);
+    $dml_autoridad->insertar_datos($idcatcargo, $nombre_aut, $correo_aut, $descripcion, $nombre_fichero, $idcatgestion);
 }
 
 if (isset($_POST["Modificar"])) {
+    $idautoridad = intval($_POST["idautoridad"]);
     $idcatgestion = intval($_POST["idcatgestion"]);
     $idcatcargo = intval($_POST["idcatcargo"]);
-    $nombre_aut = $_POST["nombre_transparencia"];
-    $correo_aut = $_POST["nombre_transparencia"];
+    $nombre_aut = $_POST["nombre_autoridad"];
+    $correo_aut = $_POST["correo_autoridad"];
     $descripcion = $_POST["descripcion_breve"];
     $nombre_fichero = null;
     if (isset($_FILES['fichero'])) {
@@ -185,7 +186,7 @@ if (isset($_POST["Modificar"])) {
     } else {
         echo "no hay archivo";
     }
-    $dml_autoridad->modificar_datos($_POST["idautoridad"], $_POST["idcatcargo"], $_POST["nombre_autoridad"], $_POST["correo_autoridad"], $_POST["descripcion_breve"], $_POST["archivo_adjunto"], $_POST["idcatgestion"]);
+    $dml_autoridad->modificar_datos($idcatcargo, $nombre_aut, $correo_aut, $descripcion, $nombre_fichero, $idcatgestion, $idautoridad);
 }
 if (isset($_POST["Eliminar"])) {
     $dml_autoridad->eliminar_datos($_POST["codigoe"]);

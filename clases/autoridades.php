@@ -17,7 +17,7 @@ class Autoridad
         echo '<div class="card mb-3">';
         echo '<div class="row g-0">';
         echo '<div class="col-md-5">';
-        echo '<img src="' . $filas['foto'] . '" class="img-fluid rounded-start" alt="' . $filas['nombre'] . '">';
+        echo '<img src="./adminweb/imagenes/autoridad/' . $filas['foto'] . '" class="img-fluid rounded-start" alt="' . $filas['nombre'] . '">';
         echo '</div>';
         echo '<div class="col-md-7">';
         echo '<div class="card-body">';
@@ -46,7 +46,7 @@ class Autoridad
       foreach ($result as $filas) {
         echo '<div class="col-lg-4 mb-4">';
         echo '<div class="card">';
-        echo '<img src="' . $filas['foto'] . '" alt="" class="card-img-top">';
+        echo '<img src="./adminweb/imagenes/autoridad/' . $filas['foto'] . '" alt="" class="card-img-top">';
         echo '<div class="card-body">';
         echo '<h5 class="card-title font-weight-bold">' . $filas['nombre'] . '</h5>';
         echo '<h6 class="card-text font-weight-bold">' . $filas['correo'] . '</h6>';
